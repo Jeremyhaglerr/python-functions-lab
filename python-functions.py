@@ -34,3 +34,15 @@ def occurrences(string, substring):
   return string.count(substring)
 
 print(occurrences('fleep floop', 'e'))
+
+
+# Challenge 4
+# Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
+
+def product(*arguments):
+  total = 1
+  for argument in arguments:
+    total *= argument
+  return total
+
+print(product(-1, 4))
